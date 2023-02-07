@@ -13,7 +13,7 @@ async def download(event):
         await event.edit("Reply to a media to download it")
 
 # if user message .uploadlist then send the list of files in downloads folder
-@get(pattern=".downloads")
+@get(pattern=".files")
 async def uploadlist(event):
     files = os.listdir("downloads/")
     msg = ""
